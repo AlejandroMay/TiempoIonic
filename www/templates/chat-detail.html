@@ -1,0 +1,35 @@
+
+<ion-view view-title="Dia {{objeU.dt*1000 | date}}">
+ 
+<div class="list">
+  
+  <div class="item item-divider">
+      Estado del tiempo
+  </div>
+
+  <a class="item" href="#">
+    <img src="http://openweathermap.org/img/w/{{objeU.weather[0].icon}}.png"> <p>Fecha: {{objeU.dt*1000 | date}}</p>
+       
+  </a>
+   <a class="item" href="#">
+      <p>Temperaturas:</p>
+   </a>
+      <a class="item" href="#">
+         <p>Min {{objeU.temp.min}}° / Max {{objeU.temp.max}}°</p>
+   </a>
+      <a class="item" href="#">
+           <p>Clima: {{objeU.weather[0].description}}</p>
+   </a>
+      <a class="item" href="#">
+        <p>Humedad: {{objeU.humidity}}%</p>
+   </a>
+    <a class="item" href="#">
+        <p>Viento: {{objeU.speed}}km/h</p>
+   </a>
+    <a class="item" href="#">
+          <p>Probabilidad de lluvia: {{objeU.rain}}%</p>
+   </a>
+
+</div>
+
+</ion-view>
